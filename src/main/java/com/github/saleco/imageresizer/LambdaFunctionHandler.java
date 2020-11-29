@@ -27,7 +27,7 @@ public class LambdaFunctionHandler implements RequestHandler<S3Event, String> {
 
 	private static final int IMG_WIDTH = 100;
 	private static final int IMG_HEIGHT = 100;
-	private static final String RESIZED_BUCKET_NAME = "resizedimagebucketsaleco";
+	protected static final String RESIZED_BUCKET_NAME = "resizedimagebucketsaleco";
 	
 	private AmazonS3 s3 = AmazonS3ClientBuilder.standard().build();
 
